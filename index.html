@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Monte-Carlo-Simulation: Fitnessstudio</title>
+    <link rel="stylesheet" href="style.css"> <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Monte-Carlo-Simulation: Fitnessstudio Profitabilität</h2>
+        
+        <div class="input-grid">
+            <div class="group"><label>Kunden pro Monat:</label><input type="number" id="baseCust" value="1000"></div>
+            <div class="group"><label>Abweichung Kunden:</label><input type="number" id="custDev" value="60"></div>
+            <div class="group"><label>Umsatz pro Kunde (€):</label><input type="number" id="revPerCust" value="50"></div>
+            <div class="group"><label>Abweichung Umsatz (€):</label><input type="number" id="revDev" value="10"></div>
+            <div class="group"><label>Fixkosten pro Monat (€):</label><input type="number" id="fixCosts" value="15000"></div>
+            <div class="group"><label>Variable Kosten pro Kunde (€):</label><input type="number" id="varCosts" value="5"></div>
+            <button onclick="runMonteCarlo()">Simulation starten (100.000 Iterationen x 20 Läufe)</button>
+        </div>
+
+        <div id="summary" style="display:none;"></div>
+        <canvas id="canvasChart"></canvas>
+    </div>
+    <script src="script.js"></script> </body>
+</html>
