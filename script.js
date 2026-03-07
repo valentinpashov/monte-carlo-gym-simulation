@@ -15,7 +15,7 @@ function runMonteCarlo() {
     btn.disabled = true;
     btn.innerText = "Simuliere... Bitte warten...";
     sumDiv.style.display = 'block';
-    sumDiv.innerHTML = "Berechnung läuft (2.000.000 Simulationen)...";
+    sumDiv.innerHTML = "Berechnung läuft (2.000.000 Simulationen)";
 
     setTimeout(() => {
         const iterations = 100000; 
